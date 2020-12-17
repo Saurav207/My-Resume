@@ -1,0 +1,29 @@
+@keyframes bounce{
+	0%, 50%,to{
+		transform: translateY(0px);
+	}
+	
+	40%{
+		transform: translateY(-30px);
+	}
+	70%{
+		transform: translateY(-10px);
+	}
+	90%{
+		transform: translateY(-4px);
+	}
+
+	
+}
+
+
+div{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 20%;
+	left: 25%;
+	background-color: red;
+	animation: bounce 1s linear 2 ;
+}
+	

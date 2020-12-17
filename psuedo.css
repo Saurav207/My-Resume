@@ -1,0 +1,35 @@
+p::before{
+         content: 'this is a new ';
+          font-size: 2rem;
+          color: red;
+		}
+
+		/*p::after{
+			content: 'this is after';
+			font-size: 2rem;
+			color: yellow;
+		}*/
+
+
+		p::after{
+			content: '';
+			display: inline-block;
+			   height: 40px;
+            width: 40px;
+			background-image: url(5.jpg);
+			background-size: contain;
+		}
+
+		li{
+			list-style: none;
+		}
+
+		li::before{
+			content: '';
+			display: inline-block;
+			height: 20px;
+			width: 20px;
+		
+			background-image: url(6.jpg);
+			background-size: contain;
+			}

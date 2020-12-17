@@ -1,0 +1,60 @@
+/*div{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	background-color: aquamarine;
+	/*transform: rotate(120deg);*/
+	/*transform: scale(2.9, 1); */ /*horizontal and vertical*/
+
+    /*transform: translate(10%, 100px);*/  /*horizontal and vertical and also give values in percentage */
+ /*/*    transition: 1s steps(6, end); /*ease-in-out*/  /*ease-in-out means transition will start smoothly and end smoothly*/
+
+
+/*div:hover{
+	transform: scale(1.5) translate(150px);
+	
+	
+}*/
+
+
+   @keyframes changeScale{
+
+	from{
+		border-radius: 0%;
+
+	}
+
+	25%{
+		border-radius: 13%;
+	}
+
+	50%{
+		border-radius: 25%;
+	}
+	75%{
+		border-radius: 37%;
+	}
+	to{
+        border-radius: 50%;
+	}
+}
+
+div{
+	height: 100px;
+	width: 100px;
+	background-color: aquamarine;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	animation: changeScale 1s ease-in-out 4 alternate;
+
+
+}
+
+/*div:hover{
+
+	transform: scale(1.2) translate(150px);
+
+}*/

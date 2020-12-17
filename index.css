@@ -1,0 +1,645 @@
+body{
+	margin: 0px;  /*if I want there is no gap in the browser*/
+}
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Body Header */
+#body-header{
+	height: 65vh;
+	opacity: 0.7;
+	background-image: url(macbook_mouse.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+/* Horizontal Lists */
+
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-list {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+.text-right{
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center{
+	text-align: center;
+}
+
+/*---Name And Social Icons---*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li a i {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+
+.section-heading{
+	width : auto;
+	padding: 20px 10px 10px;
+	margin: 10px auto;
+	font-weight: 400;
+}
+
+.section-heading span{
+	font-size: 40px;
+	color: #2857a4;
+	display: inline-block;
+	padding-top: 10px;
+	margin-right: 0.8rem;
+}
+
+
+section{
+	width: 100%;
+/*	height: 75vh;*/
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;   /*every element in center*/
+}
+
+section:nth-child(2n){
+	background-color: lightgray;
+}
+
+section:nth-child(2n + 1){
+	background-color: white;
+}
+section:target{
+	background-color: cyan;   /*here target is used for change the background if u click any nav*/
+}
+
+/*---------ABOUT US SECTION------*/
+
+
+
+#about{ 
+ height: auto;
+ width: 100%;
+}
+
+
+#my-image{
+	height: 12rem;
+	width: 12rem;
+	margin: auto;
+	margin-top: -17vh;
+	position: relative;  /*by this we appear my image to be visible in this */
+}
+
+#my-image img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0px 0px 2px 4px white;
+}
+
+
+.about-image p{
+	color: gray;
+	font-size: 100px;
+}
+
+
+.about-para{
+	
+	height: 200px;
+	width: 500px;
+	margin: auto;
+	margin-top: 70px;
+
+	color: lightgray;
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+     line-height: 20px;
+	
+  
+}
+
+.about-para span{
+	color: cyan;
+	font-weight: bolder;
+}
+
+
+/*----Skills Section----*/
+
+
+.skills-display{
+	width: 70%;
+	height: 400px;
+     display: flex;
+     /*min-width: 450px;*/
+     flex-wrap: wrap;
+     justify-content: space-between;/*spaces between content should be even*/
+      
+}
+
+
+.skill-progress{
+	height: 1.7rem;
+	width: 11rem;
+	
+	/*border: .1px solid #bab2b2;*/
+    border-radius: 2rem;
+    margin-top: 4rem;
+    margin-right: 5px;
+    box-shadow: inset -3px -3px 5px #ffffff70, inset 3px 3px 5px #00000070;
+    /*here this is inner shadow is use or neomprphism desgin*/
+    
+
+}
+.skill-progress>div{
+	border-radius: 20px 0px 0px 20px;
+}
+
+.eighty-five{
+	width: 85%;
+	height: inherit;
+	background-color: #bfb9b9;
+	box-shadow: 2.5px 1px 2px 1px #958f8f;
+	
+}
+.eight-five{
+	width: 15%
+	background-color: gray;
+}
+.eighty-five span{
+	color: white;
+	padding: 10px;
+	margin: 2px;
+    
+
+}
+.fifty-five{
+	width: 55%;
+	height: inherit;
+	background-color: #bfb9b9;
+	box-shadow: 2.5px 1px 2px 1px #958f8f;
+}
+
+.fifty-five span{
+	color: white;
+	padding: 4px;
+	margin-left: 2px;
+
+}
+
+.thirty{
+width: 30%;
+	height: inherit;
+	background-color: #bfb9b9;
+	box-shadow: 2.5px 1px 2px 1px #958f8f;
+
+}
+
+.thirty span{
+	color: white;
+	padding: 4px;
+	margin-left: 2px;
+}
+
+.ninty{
+	width: 90%;
+	height: inherit;
+	background-color: #bfb9b9;
+	box-shadow: 2.5px 1px 2px 1px #958f8f;
+}
+.ninty span{
+	color: white;
+	padding: 4px;
+	margin-left: 2px;
+}
+.sixty{
+width: 60%;
+	height: inherit;
+	background-color: #bfb9b9;
+	box-shadow: 2.5px 1px 2px 1px #958f8f;
+}
+
+.sixty span{
+	color: white;
+	padding: 4px;
+	margin-left: 2px;
+}
+}
+
+
+/*Common Margin Classes*/
+.mb75px{
+margin-bottom: 75px;
+}
+.mb-blue{
+	background-color: #5757ea;
+
+}
+.mb-cyan{
+	background-color: #05c1c1;
+}
+
+.mb-brown{
+	background-color: brown;
+}
+.mb-green{
+	background-color: #d3611e;
+}
+
+
+.port{
+	margin-top: 70px;
+}
+.port-sec{
+	width: 80%
+	
+}
+.port-sec{
+
+}
+
+.port-folio{
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+
+.port-folio img{
+  height: 300px;
+  width: 300px;
+  border-radius: 5px;
+  margin: 5px 0px 0px 0px;
+  padding: 10px;
+  background-size: contain;
+  transition: .5s;
+}
+.port-folio img:hover{
+	opacity: .6;
+}
+
+/*------------------------  CONTACT  ------------------------*/
+
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/*----------------------EXPERIENCES---------------*/  
+ .timeline{ 	
+ 	position: relative; 	
+ 	width: 75%; 	
+ 	/*border: 2px solid blue; */
+ 	}  
+ 	.timeline-box{
+ 	 	position: relative;
+ 	 	 	width: 40%; 	
+ 	 	 	left: 5%; 	
+ 	 	 	min-height: 150px; 	
+ 	 	 	/*border: 2px solid red; */	
+ 	 	 	margin-top: 5px; 
+ 	 	 	}  
+
+ 	 	 	.timeline-box:nth-child(2n){ 
+ 	 	 		left: 53%;
+ 	 	 		 } 
+
+ 	 	 		 .timeline-box:nth-child(2n + 1)::after{
+                      content: '';
+                      border-radius: 50%;
+                      position: absolute;
+                      right: -14%;
+                      top: 26%;
+                      width: 0.6rem;
+                      height: 0.6rem;
+                      background-color: #8d8686;
+                      z-index: 1;
+
+ 	 	 		 }
+
+ 	 	 		 .timeline-box:nth-child(2n)::after{
+                      content: '';
+                      border-radius: 50%;
+                      position: absolute;
+                      left: -8.1%;
+                      top: 26%;
+                      width: 0.6rem;
+                      height: 0.6rem;
+                      background-color: #8d8686;
+                      z-index: 1;
+
+ 	 	 		 }
+
+ .timeline-divider{ 
+ 	position: absolute; 
+ 		height: 75%; 	
+ 		width: 0; 
+ 			border: 2px dashed #0096fa6b; 
+ 				top: 10%; 
+ 					left: 50%; 
+ 				}
+
+ 	 .timeline-traveller{
+ 	 	position: sticky;
+ 	 	top: 25%;
+ 	 	transform: rotate(90deg);
+ 	 	z-index: 2;
+ 	 }	 
+
+ 	 .designate{
+ 	 	margin-left: 65%; 
+ 	 }
+
+
+ 	 .designate::before{
+      content: '';
+      
+      position: absolute;
+      left: 0%;
+      display: inline-block;
+      height: 60px;
+      width: 60px;
+      
+      background-image: url(10.jpg);
+      background-size: contain;
+ 	 }	  	
+
+ 	 .comp-name{
+ 	 	margin-left: 65%;
+ 	 	color: orange;
+ 	 }		
+
+ 	 .date{
+ 	 	margin-left: 50%;
+ 	 	color: #8d8686;
+
+ 	 }	
+
+ 	 .mb{
+ 	 	color: #216fad;
+
+ 	 }
+
+
+@media screen and (max-width: 600px) {
+	.skills-display{
+		height: 800px;
+	}
+}
+@media only screen and (max-width: 572px) {
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .bars {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
+}
+
+
+@media screen and  (max-width: 600px) {
+	.timeline-divider{
+		left: 5%;
+	}
+
+     .timeline-box{
+     	left: 12%;
+     	width: 80%;
+     }
+     .timeline-box:nth-child(2n){ 
+ 	 	 		left: 12%;
+ 	  } 
+
+ 	  .timeline-box:nth-child(2n + 1)::after {
+ 	  	left: -10%;
+ 	  }
+ 	  .timeline-box:nth-child(2n)::after {
+        left: -10%;
+ 	  }
+
+ 	  html{
+ 	  	font-size: 15px;
+ 	  }
+        #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
+    }
+
+    #my-details-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+}
